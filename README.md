@@ -4,5 +4,8 @@
 
 This repository contains the code for ntepd's Windows application. 
 
+## Build it yourself:
+To build ntepd for Windows yourself, follow this [guide](https://github.com/ntepd/windows/wiki/Build-ntepd-windows-yourself)
+
 > [!WARNING]
 > ⚠️ ntepd is still in early development, expect bugs
