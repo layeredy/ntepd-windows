@@ -1,0 +1,5 @@
+note/
+.env
+node_modules/
+dist/
+window/

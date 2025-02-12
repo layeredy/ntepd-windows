@@ -1,0 +1,31 @@
+{
+    "name": "ntepd",
+    "version": "1.0.0",
+    "description": "Note taking application",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "set NODE_ENV=development && electron .",
+        "build": "electron-builder"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "electron": "^28.0.0",
+        "electron-builder": "^24.13.3"
+    },
+    "build": {
+        "appId": "com.layeredy.ntepd",
+        "productName": "ntepd",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "target": "nsis",
+            "icon": "src/images/icon.ico"
+        }
+    },
+    "author": "Layeredy Software",
+    "license": "MIT"
+}
