@@ -24,9 +24,9 @@
                 <div class="sidebar-header">
                     <div class="sidebar-top">
                         <h2 class="app-title">ntepd</h2>
-                        <div class="theme-switcher">
-                            <button id="themeToggle" class="theme-toggle-btn">
-                                <span class="theme-icon">☀️</span>
+                        <div class="settings-trigger">
+                            <button id="settingsToggle" class="settings-toggle-btn">
+                                <i class="fas fa-cog"></i>
                             </button>
                         </div>
                     </div>
@@ -36,7 +36,6 @@
                     </button>
                 </div>
                 <div id="notesList" class="notes-list"></div>
-                <div class="version-info">v1.0.0 © 2025 ntepd.com</div>
             </div>
             <div class="editor">
                 <div id="editorContainer" class="editor-content">
@@ -64,6 +63,34 @@
                 <div class="modal-buttons">
                     <button id="confirmDelete" class="delete-confirm-btn">Delete</button>
                     <button id="cancelDelete" class="delete-cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <h3>Settings</h3>
+                <div class="settings-section">
+                    <label for="themeSelect">Theme:</label>
+                    <select id="themeSelect" class="theme-select">
+                        <option value="dark">Catppuccin Dark (Default)</option>
+                        <option value="catppuccin_light">Catppuccin Light</option>
+                        <option value="midnight">Midnight</option>
+                        <option value="gruvbox_dark">Gruvbox Dark</option>
+                        <option value="gruvbox_light">Gruvbox Light</option>
+                        <option value="paper">Paper</option>
+                        <option value="dracula">Dracula</option>
+                        <option value="monokai">Monokai</option>
+                        <option value="ayu_dark">Ayu Dark</option>
+                        <option value="pink">Pink</option>
+                        <option value="plasma">Plasma</option>
+
+                    </select>
+                </div>
+                <div class="settings-section copyright">
+                    <p>Copyright &copy; 2025 <a href="https://ntepd.com">ntepd</a> by <a href="https://layeredy.com">Layeredy Software</a>, <a href="https://github.com/ntepd/notepad/blob/main/LICENSE">MIT license</a>. See <a href="https://github.com/ntepd">source</a>.</p>
+                </div>
+                <div class="modal-buttons">
+                    <button id="closeSettings" class="delete-cancel-btn">Close</button>
                 </div>
             </div>
         </div>

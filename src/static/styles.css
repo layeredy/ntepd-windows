@@ -1,4 +1,5 @@
 /* This code was cleaned up and made easier to read by an AI. */ 
+/* If I included a theme that you made/work on and you want it removed, please create an issue and I'll remove it --Auri */
 :root {
     --base: #1e1e2e;
     --mantle: #181825;
@@ -24,8 +25,7 @@
     --mobile-breakpoint: 768px;
 }
 
-/* Light theme */
-[data-theme="light"] {
+[data-theme="catppuccin_light"] {
     --base: #eff1f5;
     --mantle: #e6e9ef;
     --crust: #dce0e8;
@@ -46,6 +46,211 @@
     --mauve: #8839ef;
     --pink: #ea76cb;
     --rosewater: #dc8a78;
+}
+
+[data-theme="midnight"] {
+    --base: #000000;
+    --mantle: #000000;
+    --crust: #000000;
+    --text: #b4b4c2;
+    --subtext1: #9599b3;
+    --subtext0: #8c8fa8;
+    --surface2: #2a2b3d;
+    --surface1: #1e1f2f;
+    --surface0: #161722;
+    --overlay0: #494b5e;
+    --blue: #6690d9;
+    --lavender: #9aa0d9;
+    --sapphire: #5ba3c9;
+    --sky: #6bb8c7;
+    --teal: #7bc2b6;
+    --green: #8bc48c;
+    --peach: #d99b73;
+    --mauve: #ab8cd4;
+    --pink: #d4a7c7;
+    --rosewater: #d4bfbc;
+}
+
+[data-theme="gruvbox_dark"] {
+    --base: #282828;
+    --mantle: #1d2021;
+    --crust: #141617;
+    --text: #ebdbb2;
+    --subtext1: #d5c4a1;
+    --subtext0: #bdae93;
+    --surface2: #504945;
+    --surface1: #3c3836;
+    --surface0: #32302f;
+    --overlay0: #665c54;
+    --blue: #83a598;
+    --lavender: #d3869b;
+    --sapphire: #458588;
+    --sky: #83a598;
+    --teal: #689d6a;
+    --green: #b8bb26;
+    --peach: #fe8019;
+    --mauve: #d3869b;
+    --pink: #db4740;
+    --rosewater: #cc241d;
+}
+
+[data-theme="gruvbox_light"] {
+    --base: #fbf1c7;
+    --mantle: #f2e5bc;
+    --crust: #ebdbb2;
+    --text: #3c3836;
+    --subtext1: #504945;
+    --subtext0: #665c54;
+    --surface2: #bdae93;
+    --surface1: #d5c4a1;
+    --surface0: #ebdbb2;
+    --overlay0: #928374;
+    --blue: #458588;
+    --lavender: #b16286;
+    --sapphire: #076678;
+    --sky: #458588;
+    --teal: #427b58;
+    --green: #98971a;
+    --peach: #d65d0e;
+    --mauve: #b16286;
+    --pink: #9d0006;
+    --rosewater: #cc241d;
+ }
+
+[data-theme="paper"] {
+    --base: #ffffff;
+    --mantle: #fafafa;
+    --crust: #f0f0f0;
+    --text: #2c2c2c;
+    --subtext1: #3c3c3c;
+    --subtext0: #4c4c4c;
+    --surface2: #e0e0e0;
+    --surface1: #d4d4d4;
+    --surface0: #c8c8c8;
+    --overlay0: #787878;
+    --blue: #2196f3;
+    --lavender: #9c27b0;
+    --sapphire: #00acc1;
+    --sky: #03a9f4;
+    --teal: #009688;
+    --green: #4caf50;
+    --peach: #ff9800;
+    --mauve: #673ab7;
+    --pink: #e91e63;
+    --rosewater: #f44336;
+}
+
+[data-theme="dracula"] {
+    --base: #282a36;
+    --mantle: #1d1f27;
+    --crust: #191b22;
+    --text: #f8f8f2;
+    --subtext1: #e2e2dc;
+    --subtext0: #c6c6c1;
+    --surface2: #44475a;
+    --surface1: #383a4c;
+    --surface0: #2d2f3e;
+    --overlay0: #6272a4;
+    --blue: #8be9fd;
+    --lavender: #bd93f9;
+    --sapphire: #62e9ec;
+    --sky: #9aedfe;
+    --teal: #7fe4d8;
+    --green: #50fa7b;
+    --peach: #ffb86c;
+    --mauve: #bd93f9;
+    --pink: #ff79c6;
+    --rosewater: #ff5555;
+}
+
+[data-theme="monokai"] {
+    --base: #272822;
+    --mantle: #1e1f1c;
+    --crust: #161713;
+    --text: #f8f8f2;
+    --subtext1: #e6e6dc;
+    --subtext0: #c5c5bd;
+    --surface2: #49483e;
+    --surface1: #383830;
+    --surface0: #2d2d29;
+    --overlay0: #75715e;
+    --blue: #66d9ef;
+    --lavender: #ae81ff;
+    --sapphire: #52cfe0;
+    --sky: #7adfef;
+    --teal: #5fe4d3;
+    --green: #a6e22e;
+    --peach: #fd971f;
+    --mauve: #ae81ff;
+    --pink: #f92672;
+    --rosewater: #f92672;
+}
+
+[data-theme="ayu_dark"] {
+    --base: #0a0e14;
+    --mantle: #070b10;
+    --crust: #05080c;
+    --text: #b3b1ad;
+    --subtext1: #a09f9b;
+    --subtext0: #8a8884;
+    --surface2: #2d3640;
+    --surface1: #1f2730;
+    --surface0: #131721;
+    --overlay0: #3d4751;
+    --blue: #39bae6;
+    --lavender: #a37acc;
+    --sapphire: #59c2ff;
+    --sky: #73d0ff;
+    --teal: #95e6cb;
+    --green: #c2d94c;
+    --peach: #ff8f40;
+    --mauve: #a37acc;
+    --pink: #f07178;
+    --rosewater: #ff3333;
+}
+
+[data-theme="pink"] {
+    --base: #0d1117;
+    --mantle: #090c10;
+    --crust: #040507;
+    --text: #fcd7fc; 
+    --subtext1: #f4bdfc; 
+    --subtext0: #e69aed; 
+    --surface2: #5b264f; 
+    --surface1: #431c3c; 
+    --surface0: #2e1229; 
+    --overlay0: #8f3b75; 
+    --blue: #a077fe;
+    --lavender: #c084ff; 
+    --sapphire: #a858c5; 
+    --sky: #fe99ff; 
+    --teal: #6d99ff;
+    --green: #88ffcc; 
+    --peach: #ffa6a6; 
+    --mauve: #db61a2; 
+    --pink: #ff66b2; 
+    --rosewater: #ff7b9c; 
+}
+
+[data-theme="plasma"] {
+    --base: #0a0f24; 
+    --mantle: #0c1330; 
+    --crust: #0e1740; 
+    --text: #d6e1ff; 
+    --subtext1: #b8caff;
+    --subtext0: #96b4ff; 
+    --surface2: #3b4b87;
+    --surface1: #2a376a; 
+    --surface0: #1d2750; 
+    --overlay0: #6472b7; 
+    --blue: #5e99ff; 
+    --lavender: #92b3ff; 
+    --sapphire: #4a87ff; 
+    --sky: #7caaff;
+    --teal: #5eaaff; 
+    --green: #8fccff; 
+    --peach: #c4d9ff; 
+    --mauve: #a0b0ff; 
 }
 
 * {
@@ -558,4 +763,73 @@ body {
     height: 3px;
     background: var(--base);
     opacity: 0.3;
+}
+
+.settings-toggle-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    background: var(--surface0);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--text);
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-toggle-btn:hover {
+    background: var(--surface1);
+}
+
+.settings-section {
+    margin-bottom: 1.5rem;
+}
+
+.settings-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.theme-select {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--surface0);
+    border: 1px solid var(--surface1);
+    border-radius: 0.5rem;
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-select:hover {
+    border-color: var(--mauve);
+}
+
+.theme-select:focus {
+    outline: none;
+    border-color: var(--mauve);
+    box-shadow: 0 0 0 2px rgba(203, 166, 247, 0.2);
+}
+
+.copyright {
+    font-size: 0.875rem;
+    color: var(--subtext0);
+    line-height: 1.5;
+}
+
+.copyright a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.copyright a:hover {
+    color: var(--sapphire);
+    text-decoration: underline;
 }

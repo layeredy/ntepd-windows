@@ -1,7 +1,9 @@
 let currentNote = null;
 let autoSaveTimer = null;
 let noteToDelete = null;
-console.log('ntepd.com | github.com/ntepd | v-1.0.2');
+
+console.log('ntepd.com | github.com/ntepd');
+
 document.addEventListener('DOMContentLoaded', () => {
     loadNotes();
     setupEventListeners();
@@ -13,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupEventListeners() {
     document.getElementById('newNoteBtn').addEventListener('click', createNewNote);
     document.getElementById('saveNoteBtn').addEventListener('click', saveNote);
-    document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+    document.getElementById('settingsToggle').addEventListener('click', showSettingsModal);
+    document.getElementById('closeSettings').addEventListener('click', hideSettingsModal);
+    document.getElementById('themeSelect').addEventListener('change', handleThemeChange);
     
     document.getElementById('confirmDelete').addEventListener('click', confirmDelete);
     document.getElementById('cancelDelete').addEventListener('click', hideDeleteModal);
@@ -93,20 +97,23 @@ function setupEventListeners() {
 function loadThemePreference() {
     const theme = localStorage.getItem('theme') || 'dark';
     document.body.setAttribute('data-theme', theme);
-    updateThemeIcon(theme);
+    document.getElementById('themeSelect').value = theme;
 }
 
-function toggleTheme() {
-    const currentTheme = document.body.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+function handleThemeChange(e) {
+    const newTheme = e.target.value;
     document.body.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
 }
 
-function updateThemeIcon(theme) {
-    const icon = document.querySelector('.theme-icon');
-    icon.textContent = theme === 'light' ? '🌙' : '☀️';
+function showSettingsModal() {
+    const modal = document.getElementById('settingsModal');
+    modal.style.display = 'block';
+}
+
+function hideSettingsModal() {
+    const modal = document.getElementById('settingsModal');
+    modal.style.display = 'none';
 }
 
 function startAutoSave() {
@@ -309,4 +316,3 @@ async function deleteNote(id) {
         console.error('Error deleting note:', error);
     }
 }
-
